@@ -186,11 +186,6 @@ public class Updater : ModuleUpdater
                 {
                     var congregacoes = new[] {
                         "CONGREGAÇÃO 1",
-                        "CONGREGAÇÃO 2",
-                        "CONGREGAÇÃO 3",
-                        "CONGREGAÇÃO 4",
-                        "CONGREGAÇÃO 5",
-                        "CONGREGAÇÃO 6",
                     };
                     foreach (var cong in congregacoes)
                     {
@@ -205,7 +200,7 @@ public class Updater : ModuleUpdater
                             saida.Endereco.Logradouro = "LOCAL 1";
                             congregacao.Saidas.Add(saida);
 
-                            for (int i = 1; i <= 75; i++)
+                            for (int i = 1; i <= 2; i++)
                             {
                                 Passageiro passageiro = ObjectSpace.CreateObject<Passageiro>();
                                 passageiro.Nome = $"PASSAGEIRO {i} {cong}";
@@ -257,20 +252,6 @@ public class Updater : ModuleUpdater
                 diaTransporte.Transporte = transporte;
                 diaTransporte.Valor = 2000;
             }
-            var pubs = ObjectSpace.GetObjects<Passageiro>();
-            GrupoViagem grupoViagem = ObjectSpace.FirstOrDefault<GrupoViagem>(r => r.Descricao == "NENHUM");
-
-            foreach (var pub in pubs)
-            {
-                var passagem = ObjectSpace.CreateObject<Passagem>();
-                passagem.DiaEvento = diaEvento;
-                passagem.Grupo = grupoViagem;
-                passagem.Congregacao = pub.Congregacao;
-                passagem.Saida = pub.Congregacao.Saidas.FirstOrDefault();
-                passagem.Passageiro = pub;
-            }
-            if (diaEvento.Data.Date == evento.DataFinal)
-                break;
         }
     }
 
