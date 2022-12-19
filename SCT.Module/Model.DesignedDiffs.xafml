@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="SCT" Company="CODTEC SISTEMAS®" Copyright="Todos os direitos reservados" Description="Sistema de gerenciamento de transportes das congregações" PreferredLanguage="pt-BR" ProtectedContentText="🔒">
+  <ActionDesign>
+    <ActionToContainerMapping>
+      <ActionContainer Id="Diagnostic" Removed="True" />
+      <ActionContainer Id="RecordsNavigation" Removed="True" />
+      <ActionContainer Id="Tools">
+        <ActionLink ActionId="CopyModelDifference" Removed="True" />
+        <ActionLink ActionId="CreateModelDifferences" Removed="True" />
+        <ActionLink ActionId="ExportModelDifferences" Removed="True" />
+        <ActionLink ActionId="ImportSharedModelDifference" Removed="True" />
+        <ActionLink ActionId="ResetModelDifferences" Removed="True" />
+      </ActionContainer>
+      <ActionContainer Id="View">
+        <ActionLink ActionId="ResetViewSettings" Removed="True" />
+      </ActionContainer>
+      <ActionContainer Id="ViewsHistoryNavigation" Removed="True" />
+      <ActionContainer Id="ViewsNavigation" Removed="True" />
+    </ActionToContainerMapping>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Eventos">
+        <Items>
+          <Item Id="Comprovante_ListView" Removed="True" />
+          <Item Id="DiaEvento_ListView" Removed="True" />
+          <Item Id="DiaTransporte_ListView" Removed="True" />
+          <Item Id="Documento_ListView" Removed="True" />
+          <Item Id="Itinerario_ListView" Removed="True" />
+          <Item Id="Passagem_ListView" Removed="True" />
+          <Item Id="Saida_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports">
+        <Items>
+          <Item Id="Dashboards" Index="0" />
+          <Item Id="ReportsV2" Index="1" />
+          <Item Id="Documento_ListView" ViewId="Documento_ListView" ObjectKey="" Index="2" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Tabelas">
+        <Items>
+          <Item Id="Circuito_ListView" Removed="True" />
+          <Item Id="Contato_ListView" Removed="True" />
+          <Item Id="Coordenacao_ListView" ViewId="Coordenacao_DetailView" />
+          <Item Id="Dependente_ListView" Removed="True" />
+          <Item Id="Endereco_ListView" Removed="True" />
+          <Item Id="GrupoViagem_ListView" Removed="True" />
+          <Item Id="Passageiro_ListView" Removed="True" />
+          <Item Id="Transporte_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="22.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="22.1.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView">
+      <Items>
+        <StaticText Id="AboutText" Caption="AboutText(2)" />
+      </Items>
+      <Layout>
+        <LayoutItem Id="AboutText" Index="0" RelativeSize="100" />
+        <LayoutItem Id="Logo" Removed="True" />
+      </Layout>
+    </DetailView>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="Circuito_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="4.403866809881848">
+            <LayoutGroup Id="Circuito" RelativeSize="100">
+              <LayoutItem Id="Nome" Index="0" RelativeSize="100" />
+              <LayoutItem Id="Coordenacao" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Congregacoes_Group" Direction="Vertical" RelativeSize="95.59613319011815">
+            <LayoutItem Id="Congregacoes" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Congregacao_DetailView" AllowDelete="True" AllowNew="True">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="31.793770139634802">
+            <LayoutGroup Id="Congregacao" RelativeSize="34.7972972972973" Caption="Congregacao" Direction="Vertical">
+              <LayoutGroup Id="Congregacao_col1" RelativeSize="100">
+                <LayoutItem Id="Nome" RelativeSize="50" />
+                <LayoutGroup Id="Autofef98f52-a027-4ad5-8152-7a214b393d74" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
+                  <LayoutItem Id="Circuito" ViewItem="Circuito" Index="0" RelativeSize="49.90439770554493" IsNewNode="True" />
+                  <LayoutItem Id="Cidade" ViewItem="Cidade" Index="1" RelativeSize="24.952198852772465" IsNewNode="True" />
+                  <LayoutItem Id="PrevisaoPassagens" ViewItem="PrevisaoPassagens" Index="2" RelativeSize="25.1434034416826" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="PrevisaoPassagens" RelativeSize="36.36363636363637" Index="2" Removed="True" />
+                <LayoutItem Id="Cidade" RelativeSize="21.428571428571427" Removed="True" />
+                <LayoutItem Id="Circuito" RelativeSize="21.428571428571427" Removed="True" />
+                <LayoutItem Id="Coordenador.Nome" RelativeSize="23.529411764705884" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Congregacao_col2" Index="1" RelativeSize="72.12931995540691" Removed="True">
+                <LayoutItem Id="Ajudante.Celular" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="Ajudante.Email" RelativeSize="28.571428571428573" Index="0" Removed="True" />
+                <LayoutItem Id="Ajudante.Nome" RelativeSize="28.571428571428573" Index="0" Removed="True" />
+                <LayoutItem Id="Coordenador.Celular" RelativeSize="28.571428571428573" Index="0" Removed="True" />
+                <LayoutItem Id="Coordenador.Email" RelativeSize="23.529411764705884" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="31.41891891891892" IsNewNode="True">
+              <LayoutItem Id="Coordenador.Nome" ViewItem="Coordenador.Nome" Index="0" RelativeSize="50" IsNewNode="True" />
+              <LayoutGroup Id="Autoca56c454-6548-47e6-83ef-855f133e5079" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="Coordenador.Email" ViewItem="Coordenador.Email" Index="0" RelativeSize="49.90439770554493" IsNewNode="True" />
+                <LayoutItem Id="Coordenador.Celular" ViewItem="Coordenador.Celular" Index="1" RelativeSize="50.09560229445507" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="2" RelativeSize="33.78378378378378" IsNewNode="True">
+              <LayoutItem Id="Ajudante.Nome" ViewItem="Ajudante.Nome" Index="0" RelativeSize="50" IsNewNode="True" />
+              <LayoutGroup Id="Auto78cfdefd-acd6-46c9-b077-ea7ff04166d4" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="Ajudante.Email" ViewItem="Ajudante.Email" Index="0" RelativeSize="49.90439770554493" IsNewNode="True" />
+                <LayoutItem Id="Ajudante.Celular" ViewItem="Ajudante.Celular" Index="1" RelativeSize="50.09560229445507" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="68.2062298603652">
+            <LayoutGroup Id="Passageiros" Index="0" RelativeSize="100">
+              <LayoutItem Id="Passageiros" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Saidas" RelativeSize="100" Index="1">
+              <LayoutItem Id="Saidas" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Eventos" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Congregacao_Saidas_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" AllowLink="False" AllowUnlink="False" ShowDetailView="False" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="Congregacao" Removed="True" />
+        <ColumnInfo Id="Descricao" Removed="True" />
+        <ColumnInfo Id="Endereco" Removed="True" />
+        <ColumnInfo Id="Horario" EditMaskType="DateTime" Removed="True" />
+        <ColumnInfo Id="Oid" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="Coordenacao_Circuitos_ListView" AllowEdit="True" AllowLink="False" AllowUnlink="False" NewItemRowPosition="Top" ShowDetailView="False" />
+    <DetailView Id="Coordenacao_DetailView" AllowDelete="False" AllowNew="False">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="30.752688172043012">
+            <LayoutGroup Id="Coordenacao" RelativeSize="27.622377622377623" Direction="Vertical" Caption="Coordenação">
+              <LayoutGroup Id="Coordenacao_col1" RelativeSize="100" Caption="Coordenacao_col1" Direction="Horizontal">
+                <LayoutItem Id="Descricao" RelativeSize="87.29582577132486" />
+                <LayoutItem Id="Chegada" ViewItem="Chegada" Index="1" RelativeSize="12.704174228675136" IsNewNode="True" />
+                <LayoutItem Id="Coordenador.Celular" Index="1" RelativeSize="63.63636363636363" Removed="True" />
+                <LayoutItem Id="Coordenador.Email" Index="1" RelativeSize="27.272727272727273" Removed="True" />
+                <LayoutItem Id="Coordenador.Nome" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Coordenacao_col2" RelativeSize="50.06729475100942" Caption="Coordenacao_col2" Removed="True">
+                <LayoutItem Id="Ajudante.Celular" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="Ajudante.Email" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="Ajudante.Nome" RelativeSize="36.36363636363637" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="34.96503496503497" Caption="Coordenador" IsNewNode="True">
+              <LayoutItem Id="Coordenador.Nome" ViewItem="Coordenador.Nome" Index="0" RelativeSize="45.333333333333336" IsNewNode="True" />
+              <LayoutGroup Id="Autoaaedbe93-f2c4-4974-be72-16f82242e0c7" ShowCaption="False" Caption="Autoaaedbe93-f2c4-4974-be72-16f82242e0c7(8)" Direction="Horizontal" Index="1" RelativeSize="54.666666666666664" IsNewNode="True">
+                <LayoutItem Id="Coordenador.Email" ViewItem="Coordenador.Email" Index="0" RelativeSize="49.81851179673321" IsNewNode="True" />
+                <LayoutItem Id="Coordenador.Celular" ViewItem="Coordenador.Celular" Index="1" RelativeSize="50.18148820326679" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="2" RelativeSize="37.41258741258741" Caption="Ajudante" IsNewNode="True">
+              <LayoutItem Id="Ajudante.Nome" ViewItem="Ajudante.Nome" Index="0" RelativeSize="45.333333333333336" IsNewNode="True" />
+              <LayoutGroup Id="Autoc0eab7a2-c8a9-42ad-bfd0-857493b98b2e" ShowCaption="False" Caption="Autoc0eab7a2-c8a9-42ad-bfd0-857493b98b2e(13)" Direction="Horizontal" Index="1" RelativeSize="54.666666666666664" IsNewNode="True">
+                <LayoutItem Id="Ajudante.Email" ViewItem="Ajudante.Email" Index="0" RelativeSize="49.81851179673321" IsNewNode="True" />
+                <LayoutItem Id="Ajudante.Celular" ViewItem="Ajudante.Celular" Index="1" RelativeSize="50.18148820326679" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Circuitos_Group" Direction="Vertical" RelativeSize="69.24731182795699">
+            <LayoutItem Id="Circuitos" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Dependente_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Dependente" RelativeSize="11.063372717508056" Direction="Vertical">
+              <LayoutGroup Id="Dependente_col1" RelativeSize="100">
+                <LayoutItem Id="Nome" Index="0" RelativeSize="50" />
+                <LayoutItem Id="Passageiro" Index="0" RelativeSize="4.177545691906006" Removed="True" />
+                <LayoutGroup Id="Autof2eac80b-d6e8-48c5-bf00-98d0306a9d82" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
+                  <LayoutItem Id="TipoDocumento" ViewItem="TipoDocumento" Index="0" RelativeSize="49.90439770554493" IsNewNode="True" />
+                  <LayoutItem Id="Documento" ViewItem="Documento" Index="1" RelativeSize="50.09560229445507" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Dependente_col2" RelativeSize="50.055741360089186" Removed="True">
+                <LayoutItem Id="Documento" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="DataNascimento" RelativeSize="92.68929503916449" Removed="True" />
+                <LayoutItem Id="TipoDocumento" RelativeSize="4.177545691906006" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="Item1" Index="1" RelativeSize="88.93662728249194" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DiaEvento_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <TabbedGroup Id="Tabs" RelativeSize="100" Index="0">
+            <LayoutGroup Id="Transportes" RelativeSize="100">
+              <LayoutItem Id="Transportes" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Passagens" RelativeSize="100">
+              <LayoutItem Id="Passagens" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="4.708798017348204" Removed="True">
+            <LayoutGroup Id="DiaEvento" Caption="Data" RelativeSize="100" Removed="True">
+              <LayoutItem Id="Data" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="DiaEvento_Passagens_ListView" IsGroupPanelVisible="True" AllowLink="False" AllowUnlink="False">
+      <Columns>
+        <ColumnInfo Id="DiaEvento" SortOrder="None" GroupIndex="-1" Index="-1" />
+        <ColumnInfo Id="Passageiro" Index="0" />
+        <ColumnInfo Id="Itinerario" Index="1" />
+        <ColumnInfo Id="Assento" Index="2" />
+        <ColumnInfo Id="Congregacao" SortOrder="Ascending" GroupIndex="0" Index="3" />
+        <ColumnInfo Id="Saida" Index="4" SortOrder="Ascending" GroupIndex="1" />
+        <ColumnInfo Id="Grupo" SortOrder="Ascending" GroupIndex="2" Index="5" />
+      </Columns>
+    </ListView>
+    <ListView Id="DiaEvento_Transportes_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" AllowLink="False" AllowUnlink="False">
+      <Columns>
+        <ColumnInfo Id="Celular" Index="-1" />
+        <ColumnInfo Id="Identificacao" Index="-1" />
+        <ColumnInfo Id="Responsavel" Index="-1" />
+        <ColumnInfo Id="Retorno" Index="-1" />
+        <ColumnInfo Id="Alocados" Removed="True" />
+        <ColumnInfo Id="Assentos" Removed="True" />
+        <ColumnInfo Id="Transporte" Removed="True" />
+        <ColumnInfo Id="Valor" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="DiaTransporte_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="9.789343246592317">
+            <LayoutGroup Id="DiaTransporte" Caption="Transporte" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="DiaTransporte_col1" RelativeSize="100" Caption="DiaTransporte_col1" Direction="Horizontal">
+                <LayoutItem Id="Transporte" ViewItem="Transporte" Index="0" RelativeSize="24.916943521594686" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Assentos" ViewItem="Assentos" Index="1" RelativeSize="24.916943521594686" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Identificacao" ViewItem="Identificacao" Index="2" RelativeSize="24.916943521594686" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Valor" ViewItem="Valor" Index="3" RelativeSize="25.249169435215947" IsNewNode="True" />
+                <LayoutItem Id="Alocados" RelativeSize="19.898819561551434" Removed="True" />
+                <LayoutItem Id="Descricao" RelativeSize="36.36363636363637" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="DiaTransporte_col2" RelativeSize="40.472175379426645" Caption="DiaTransporte_col2" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="Celular" RelativeSize="59.583333333333336" Index="1" Removed="True" />
+                <LayoutItem Id="Responsavel" RelativeSize="29.213483146067414" Removed="True" />
+                <LayoutItem Id="Retorno" Removed="True" />
+                <LayoutItem Id="Valor" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="8.0545229244114" Caption="Viagem" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="Responsavel" ViewItem="Responsavel" Index="0" RelativeSize="47.95127353266888" IsNewNode="True" />
+            <LayoutItem Id="Celular" ViewItem="Celular" Index="1" RelativeSize="17.165005537098562" IsNewNode="True" />
+            <LayoutItem Id="HorarioPartida" ViewItem="HorarioPartida" Index="2" RelativeSize="17.165005537098562" IsNewNode="True" />
+            <LayoutItem Id="Retorno" ViewItem="Retorno" Index="3" RelativeSize="17.718715393133998" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Itinerarios_Group" Direction="Vertical" RelativeSize="82.15613382899629" Index="2">
+            <LayoutItem Id="Itinerarios" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Documento_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="4.708798017348204">
+            <LayoutGroup Id="RichTextMailMergeData" Direction="Horizontal" Index="0" RelativeSize="100">
+              <LayoutItem Id="Name" RelativeSize="73.43599615014438" />
+              <LayoutItem Id="DataType" RelativeSize="26.56400384985563" SizeConstraintsType="Custom" MinSize="276, 38" MaxSize="276, 38" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutItem Id="Template" ViewItem="Template" Index="1" RelativeSize="95.2912019826518" CaptionLocation="Top" ShowCaption="False" IsNewNode="True" />
+          <LayoutGroup Id="Template_Group" Direction="Horizontal" RelativeSize="92.3172242874845" Caption="Template" Index="2" Removed="True">
+            <LayoutItem Id="Template" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Endereco_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Endereco" RelativeSize="16.219119226638025" Caption="Endereço">
+              <LayoutGroup Id="Endereco_col1" RelativeSize="49.88452655889145">
+                <LayoutItem Id="Logradouro" Index="0" RelativeSize="29.310344827586206" />
+                <LayoutItem Id="Numero" Index="1" RelativeSize="20.689655172413794" />
+                <LayoutItem Id="Complemento" Index="2" RelativeSize="20.689655172413794" />
+                <LayoutItem Id="Bairro" Index="3" RelativeSize="29.310344827586206" />
+                <LayoutItem Id="Descricao" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Endereco_col2" RelativeSize="50.11547344110855">
+                <LayoutItem Id="Cidade" RelativeSize="29.310344827586206" />
+                <LayoutItem Id="UF" RelativeSize="20.689655172413794" />
+                <LayoutGroup Id="Auto897a765e-874b-4e69-849d-9d3fee533490" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="50" IsNewNode="True">
+                  <LayoutItem Id="Longitude" ViewItem="Longitude" Index="0" RelativeSize="50" IsNewNode="True" />
+                  <LayoutItem Id="Latitude" ViewItem="Latitude" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Latitude" RelativeSize="89.55613577023499" Removed="True" />
+                <LayoutItem Id="Longitude" RelativeSize="3.133159268929504" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="Item1" Index="1" RelativeSize="83.78088077336197" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Evento_Congregacoes_ListView" AllowDelete="True" AllowNew="True">
+      <Columns>
+        <ColumnInfo Id="Ajudante" Removed="True" />
+        <ColumnInfo Id="Cidade" Removed="True" />
+        <ColumnInfo Id="Circuito" Removed="True" />
+        <ColumnInfo Id="Coordenador" Removed="True" />
+        <ColumnInfo Id="Oid" Removed="True" />
+        <ColumnInfo Id="PrevisaoPassagens" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Evento_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" Direction="Vertical">
+          <TabbedGroup Id="Tabs" RelativeSize="100" Index="0">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="0" Caption="Dados do Evento" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Evento" ShowCaption="True" Direction="Horizontal" Index="0" RelativeSize="23.11756935270806" IsNewNode="True">
+                <LayoutGroup Id="Evento_col1" ShowCaption="False" Index="0" RelativeSize="71.57534246575342" Caption="Evento_col1" IsNewNode="True">
+                  <LayoutItem Id="Descricao" ViewItem="Descricao" Index="0" RelativeSize="22.535211267605632" IsNewNode="True" />
+                  <LayoutGroup Id="Autoab8e0d22-f235-42fe-8d20-1c8eeb4abe7b" ShowCaption="False" Caption="Autoab8e0d22-f235-42fe-8d20-1c8eeb4abe7b(7)" Direction="Vertical" Index="1" RelativeSize="77.46478873239437" IsNewNode="True">
+                    <LayoutGroup Id="Auto98862bd6-c015-4e18-b3a0-b2b32bfd5099" ShowCaption="False" Caption="Auto98862bd6-c015-4e18-b3a0-b2b32bfd5099(8)" Index="0" RelativeSize="100" IsNewNode="True">
+                      <LayoutItem Id="Tema" ViewItem="Tema" Index="0" RelativeSize="27.272727272727273" IsNewNode="True" />
+                      <LayoutGroup Id="Autoadecd360-f631-451f-b713-445b6a5a7354" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="43.63636363636363" IsNewNode="True">
+                        <LayoutGroup Id="Autoccc20c3a-7e49-4c5b-b8a3-f18d8309ccd3" ShowCaption="False" Index="0" RelativeSize="49.920255183413076" IsNewNode="True">
+                          <LayoutItem Id="DataInicial" ViewItem="DataInicial" Index="0" RelativeSize="50" IsNewNode="True" />
+                          <LayoutItem Id="Lista" ViewItem="Lista" Index="1" RelativeSize="50" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Autoedfd1569-6111-4905-b085-9c593306d76f" ShowCaption="False" Index="1" RelativeSize="50.079744816586924" IsNewNode="True">
+                          <LayoutItem Id="DataFinal" ViewItem="DataFinal" Index="0" RelativeSize="50" IsNewNode="True" />
+                          <LayoutItem Id="Pagamento" ViewItem="Pagamento" Index="1" RelativeSize="50" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                      <LayoutItem Id="ValorPassagem" ViewItem="ValorPassagem" Index="2" RelativeSize="29.09090909090909" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Evento_col2" ShowCaption="False" Index="1" RelativeSize="28.424657534246574" IsNewNode="True">
+                  <LayoutItem Id="CorFundo" ViewItem="CorFundo" Index="0" RelativeSize="22.535211267605632" IsNewNode="True" />
+                  <LayoutItem Id="CorContraste" ViewItem="CorContraste" Index="1" RelativeSize="16.901408450704224" IsNewNode="True" />
+                  <LayoutItem Id="CorFonte" ViewItem="CorFonte" Index="2" RelativeSize="60.563380281690144" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Auto8c7d4f12-0200-4cb3-80ac-f2a71f588650" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="76.88243064729194" IsNewNode="True">
+                <LayoutGroup Id="Item3" ShowCaption="True" Caption="Congregações" CaptionLocation="Top" Index="0" RelativeSize="32.40534521158129" IsNewNode="True">
+                  <LayoutItem Id="Congregacoes" ViewItem="Congregacoes" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Item2" ShowCaption="True" Caption="Comprovantes" CaptionLocation="Top" Index="1" RelativeSize="67.59465478841871" IsNewNode="True">
+                  <LayoutItem Id="Comprovantes" ViewItem="Comprovantes" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Dias" RelativeSize="100" Caption="Dias de Evento" Index="1">
+              <LayoutItem Id="Dias" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Comprovantes" RelativeSize="0" Index="2" Direction="Horizontal" Removed="True">
+              <LayoutItem Id="Comprovantes" RelativeSize="100" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Congregacoes" RelativeSize="0" Index="2" Caption="Congregações" Direction="Horizontal" Removed="True">
+              <LayoutItem Id="Congregacoes" RelativeSize="100" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="77.10997442455243" Removed="True">
+            <LayoutGroup Id="Evento" RelativeSize="100" Removed="True">
+              <LayoutGroup Id="Evento_col1" RelativeSize="49.92721979621543">
+                <LayoutItem Id="Tema" Index="0" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="Data" Index="1" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="Lista" Index="2" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="Pagamento" Index="3" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="Descricao" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Evento_col2" RelativeSize="50.07278020378457">
+                <LayoutItem Id="Coordenacao" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="CorContraste" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="CorFonte" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="CorFundo" RelativeSize="28.571428571428573" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Evento_Dias_ListView" MasterDetailMode="ListViewAndDetailView" ShowDetailView="False" AllowLink="False" AllowNew="True" AllowUnlink="False" AllowEdit="True" NewItemRowPosition="None">
+      <Columns>
+        <ColumnInfo Id="Evento" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Fornecedor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="4.403866809881848">
+            <LayoutGroup Id="Fornecedor" RelativeSize="100">
+              <LayoutItem Id="Nome" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="12.1374865735768">
+            <LayoutItem Id="DadosDeposito" CaptionLocation="Top" RelativeSize="100" />
+          </LayoutGroup>
+          <LayoutGroup Id="Transportes_Group" Direction="Vertical" RelativeSize="83.45864661654136">
+            <LayoutItem Id="Transportes" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Fornecedor_ListView" ShowDetailView="True" />
+    <ListView Id="Fornecedor_Transportes_ListView" ShowDetailView="False" NewItemRowPosition="Top" AllowEdit="True" AllowLink="False" AllowUnlink="False">
+      <Columns>
+        <ColumnInfo Id="Nome" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Importacao_DetailView">
+      <Items>
+        <PropertyEditor Id="DataImportacao" AllowEdit="False" />
+        <PropertyEditor Id="Processado" AllowEdit="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Importacao" RelativeSize="11.063372717508056">
+              <LayoutGroup Id="Importacao_col1" RelativeSize="65.00956022944551">
+                <LayoutItem Id="Evento" RelativeSize="50" />
+                <LayoutItem Id="Congregacao" RelativeSize="50" />
+                <LayoutItem Id="DataImportacao" RelativeSize="36.36363636363637" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Importacao_col2" RelativeSize="34.990439770554495">
+                <LayoutItem Id="Processado" RelativeSize="50" Index="0" />
+                <LayoutItem Id="DataImportacao" ViewItem="DataImportacao" Index="1" RelativeSize="50" IsNewNode="True" />
+                <LayoutItem Id="Arquivo" RelativeSize="2.708803611738149" Removed="True" />
+                <LayoutItem Id="Chave" RelativeSize="36.36363636363637" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="1" RelativeSize="7.411385606874329" IsNewNode="True">
+              <LayoutGroup Id="Auto5c7260c0-d6cc-4b37-97d2-6dea043d06ba" ShowCaption="False" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Arquivo" ViewItem="Arquivo" Index="0" RelativeSize="49.80879541108987" IsNewNode="True" />
+                <LayoutItem Id="Chave" ViewItem="Chave" Index="1" RelativeSize="50.19120458891013" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="Item2" Index="2" RelativeSize="81.52524167561762" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Itinerario_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="10.10230179028133">
+            <LayoutGroup Id="Itinerario" RelativeSize="100" Caption="Itinerário">
+              <LayoutGroup Id="Itinerario_col1" RelativeSize="41.90573770491803" Caption="Itinerario_col1" Direction="Horizontal">
+                <LayoutItem Id="Parada" Index="0" RelativeSize="33.49633251833741" SizeConstraintsType="Custom" MinSize="137, 40" MaxSize="137, 40" />
+                <LayoutItem Id="Congregacao" ViewItem="Congregacao" Index="1" RelativeSize="66.50366748166259" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Descricao" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Itinerario_col2" RelativeSize="58.09426229508197" Caption="Itinerario_col2">
+                <LayoutGroup Id="Auto37ce6566-d445-4ca0-bc35-413e33554ba1" ShowCaption="False" Caption="Auto37ce6566-d445-4ca0-bc35-413e33554ba1(9)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="Saida" ViewItem="Saida" Index="0" RelativeSize="51.67548500881834" SizeConstraintsType="Custom" MinSize="132, 40" MaxSize="0, 0" IsNewNode="True" />
+                  <LayoutItem Id="TotalPassageiros" ViewItem="TotalPassageiros" Index="1" RelativeSize="24.16225749559083" SizeConstraintsType="Custom" MinSize="137, 40" MaxSize="137, 40" IsNewNode="True" />
+                  <LayoutItem Id="Alocados" ViewItem="Alocados" Index="2" RelativeSize="24.16225749559083" SizeConstraintsType="Custom" MinSize="137, 40" MaxSize="137, 40" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Alocados" RelativeSize="36.36363636363637" Removed="True" />
+                <LayoutItem Id="Saida" RelativeSize="50" Removed="True" />
+                <LayoutItem Id="TotalPassageiros" RelativeSize="27.272727272727273" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Passagens_Group" Direction="Vertical" RelativeSize="89.89769820971867">
+            <LayoutItem Id="Passagens" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Itinerario_Passagens_ListView">
+      <Columns>
+        <ColumnInfo Id="DiaEvento" Index="-1" />
+        <ColumnInfo Id="Congregacao" Index="1" />
+        <ColumnInfo Id="Grupo" Index="2" />
+        <ColumnInfo Id="Saida" Index="3" />
+        <ColumnInfo Id="Assento" Index="4" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Passageiro_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="11.815252416756175">
+            <LayoutGroup Id="Passageiro" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="Passageiro_col1" RelativeSize="100">
+                <LayoutItem Id="Nome" Index="0" RelativeSize="50" />
+                <LayoutGroup Id="Auto2d8d510d-b30b-4ef4-bd23-cde5b00e0c1e" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
+                  <LayoutItem Id="TipoDocumento" ViewItem="TipoDocumento" Index="0" RelativeSize="49.80879541108987" IsNewNode="True" />
+                  <LayoutItem Id="Documento" ViewItem="Documento" Index="1" RelativeSize="50.19120458891013" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Congregacao" Removed="True" />
+                <LayoutItem Id="PassageiroApp" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Passageiro_col2" RelativeSize="50.16722408026756" Removed="True">
+                <LayoutItem Id="Documento" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="TipoDocumento" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Dependentes_Group" Direction="Vertical" RelativeSize="88.18474758324382">
+            <LayoutItem Id="Dependentes" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Passagem_DetailView" ImageName="Actions_Label">
+      <Items>
+        <PropertyEditor Id="Assento" AllowEdit="False" />
+        <PropertyEditor Id="Itinerario" PropertyName="Itinerario" AllowEdit="False" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" Index="0">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="19.17960088691796" Caption="SimpleEditors">
+            <LayoutGroup Id="Autoedc50f1c-dff2-44de-88ce-f0c4bb7331c9" ShowCaption="False" Caption="Autoedc50f1c-dff2-44de-88ce-f0c4bb7331c9(3)" Direction="Horizontal" Index="0" RelativeSize="21.965317919075144" IsNewNode="True">
+              <LayoutItem Id="Itinerario1" ViewItem="Itinerario" Index="0" RelativeSize="75.0242954324587" IsNewNode="True" />
+              <LayoutItem Id="Assento" ViewItem="Assento" Index="1" RelativeSize="24.975704567541303" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Auto02d769eb-7865-4532-8903-99c196705a96" ShowCaption="False" Caption="Auto02d769eb-7865-4532-8903-99c196705a96(4)" Direction="Vertical" Index="1" RelativeSize="78.03468208092485" IsNewNode="True">
+              <LayoutGroup Id="Passagem" ShowCaption="True" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="Passagem_col1" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="Congregacao" ViewItem="Congregacao" Index="0" RelativeSize="34.343434343434346" IsNewNode="True" />
+                  <LayoutItem Id="Saida" ViewItem="Saida" Index="1" RelativeSize="24.242424242424242" IsNewNode="True" />
+                  <LayoutGroup Id="Auto704dde15-9b19-48c6-aab5-55416576e360" ShowCaption="False" Caption="Auto704dde15-9b19-48c6-aab5-55416576e360(11)" Direction="Horizontal" Index="2" RelativeSize="41.41414141414141" IsNewNode="True">
+                    <LayoutItem Id="Passageiro" ViewItem="Passageiro" Index="0" RelativeSize="75.67298105682951" IsNewNode="True" />
+                    <LayoutItem Id="Grupo" ViewItem="Grupo" Index="1" RelativeSize="24.32701894317049" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Passagem" RelativeSize="96.02977667493796" Direction="Vertical" Index="1" Removed="True">
+              <LayoutGroup Id="Passagem_col1" RelativeSize="100" Caption="Passagem_col1" Direction="Vertical">
+                <LayoutItem Id="Saida" ViewItem="Saida" Index="0" RelativeSize="4.318488529014845" IsNewNode="True" />
+                <LayoutItem Id="Congregacao" ViewItem="Congregacao" Index="1" RelativeSize="3.2388663967611335" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Passageiro" ViewItem="Passageiro" Index="2" RelativeSize="3.2388663967611335" IsNewNode="True" Removed="True" />
+                <LayoutGroup Id="Item2" ShowCaption="True" Caption="Agrupamento" CaptionLocation="Top" Index="3" RelativeSize="89.20377867746289" IsNewNode="True">
+                  <LayoutItem Id="Agrupar" ViewItem="Agrupar" Index="0" RelativeSize="5.087440381558029" IsNewNode="True" />
+                  <LayoutItem Id="CorGrupo" ViewItem="CorGrupo" Index="1" RelativeSize="94.91255961844197" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Itinerario" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Passagem_col2" RelativeSize="50.04916420845625" Caption="Passagem_col2" Removed="True">
+                <LayoutItem Id="Agrupar" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="CorGrupo" RelativeSize="50" Removed="True" />
+                <LayoutItem Id="Saida" RelativeSize="36.36363636363637" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutItem Id="Item1" Index="1" RelativeSize="80.82039911308205" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Passagem_ListView" AllowEdit="True">
+      <Columns>
+        <ColumnInfo Id="Saida" PropertyName="Saida" Index="4" IsNewNode="True" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="Passagem_LookupListView" IsGroupPanelVisible="True" GroupSummary="">
+      <Columns>
+        <ColumnInfo Id="DiaEvento" PropertyName="DiaEvento" Index="-1" SortOrder="Ascending" GroupIndex="0" IsNewNode="True" />
+        <ColumnInfo Id="Grupo" PropertyName="Grupo" Index="-1" SortOrder="Ascending" GroupIndex="2" IsNewNode="True" />
+        <ColumnInfo Id="Passageiro.Nome" Caption="Passageiro" Index="0" Width="110" />
+        <ColumnInfo Id="Congregacao" PropertyName="Congregacao" Index="1" Width="91" SortOrder="Ascending" GroupIndex="1" IsNewNode="True" />
+        <ColumnInfo Id="Saida" PropertyName="Saida" Index="2" Width="48" IsNewNode="True" />
+        <ColumnInfo Id="Assento" PropertyName="Assento" Index="3" Width="62" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="TargetCaption" Index="-1" />
+        <ColumnInfo Id="ErrorMessage" Index="0" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Saida_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Saida" Caption="Saída" RelativeSize="16.970998925886143">
+              <LayoutGroup Id="Saida_col1" RelativeSize="49.572649572649574">
+                <LayoutItem Id="Descricao" RelativeSize="4.177545691906006" Index="0" Removed="True" />
+                <LayoutItem Id="Horario" RelativeSize="24.285714285714285" Index="0" Removed="True" />
+                <LayoutItem Id="Parada" RelativeSize="27.642276422764226" Index="0" />
+                <LayoutItem Id="Endereco.Descricao" RelativeSize="3.133159268929504" Index="1" Removed="True" />
+                <LayoutItem Id="Endereco.Logradouro" RelativeSize="19.51219512195122" Index="1" />
+                <LayoutItem Id="Endereco.Numero" ViewItem="Endereco.Numero" Index="2" RelativeSize="19.51219512195122" IsNewNode="True" />
+                <LayoutItem Id="Endereco.Complemento" ViewItem="Endereco.Complemento" Index="3" RelativeSize="33.333333333333336" IsNewNode="True" />
+                <LayoutItem Id="Congregacao" RelativeSize="4.177545691906006" Removed="True" />
+                <LayoutItem Id="SaidaApp" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Saida_col2" RelativeSize="50.427350427350426">
+                <LayoutItem Id="Endereco.Bairro" ViewItem="Endereco.Bairro" Index="0" RelativeSize="27.642276422764226" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Endereco.Cidade" RelativeSize="19.51219512195122" Index="1" />
+                <LayoutItem Id="Endereco.Numero" Index="1" RelativeSize="20.338983050847457" Removed="True" />
+                <LayoutItem Id="Endereco.Longitude" RelativeSize="3.133159268929504" Index="2" Removed="True" />
+                <LayoutItem Id="Endereco.UF" RelativeSize="19.51219512195122" Index="2" />
+                <LayoutGroup Id="Autoee203112-bf3d-4b81-8655-1d787fa3d528" ShowCaption="False" Caption="Autoee203112-bf3d-4b81-8655-1d787fa3d528(13)" Direction="Horizontal" Index="3" RelativeSize="33.333333333333336" IsNewNode="True">
+                  <LayoutItem Id="Endereco.Longitude" ViewItem="Endereco.Longitude" Index="0" RelativeSize="49.717514124293785" IsNewNode="True" />
+                  <LayoutItem Id="Endereco.Latitude" ViewItem="Endereco.Latitude" Index="1" RelativeSize="50.282485875706215" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Endereco.Latitude" RelativeSize="89.55613577023499" Index="3" Removed="True" />
+                <LayoutItem Id="Endereco.Complemento" RelativeSize="4.177545691906006" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="Item1" Index="1" RelativeSize="83.02900107411385" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ValidationResults_Results_ListView">
+      <Columns>
+        <ColumnInfo Id="Context" Index="-1" />
+        <ColumnInfo Id="ContextValidationOutcome" Index="0" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

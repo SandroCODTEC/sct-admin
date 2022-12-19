@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SCT.Module.BusinessObjects.Circuito">
+    <Position X="7.5" Y="12.25" Width="1.5" />
+    <Members>
+      <Method Name="Circuito" Hidden="true" />
+      <Field Name="coordenacao" Hidden="true" />
+      <Field Name="nome" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAACAIAAAgAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>BusinessObjects\Circuito.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Congregacoes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Comprovante">
+    <Position X="1.5" Y="8.25" Width="1.5" />
+    <Members>
+      <Field Name="arquivo" Hidden="true" />
+      <Method Name="Comprovante" Hidden="true" />
+      <Field Name="congregacao" Hidden="true" />
+      <Field Name="data" Hidden="true" />
+      <Field Name="evento" Hidden="true" />
+      <Field Name="valor" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAEAgAABBIAAAgQAAAIEAA=</HashCode>
+      <FileName>BusinessObjects\Comprovante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Congregacao">
+    <Position X="7.5" Y="9" Width="1.5" />
+    <Members>
+      <Field Name="circuito" Hidden="true" />
+      <Method Name="Congregacao" Hidden="true" />
+      <Field Name="nome" Hidden="true" />
+      <Field Name="previsaoPassagens" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QQAAAAAAAIABAACAAAgAAAAAAAAAAAAAgAAABAEAAAA=</HashCode>
+      <FileName>BusinessObjects\Congregacao.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Saidas" />
+      <Property Name="Passageiros" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Coordenacao">
+    <Position X="4.5" Y="12" Width="1.5" />
+    <Members>
+      <Method Name="AfterConstruction" Hidden="true" />
+      <Field Name="ajudante" Hidden="true" />
+      <Method Name="Coordenacao" Hidden="true" />
+      <Field Name="coordenador" Hidden="true" />
+      <Field Name="descricao" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAICAAQAAAAAAAAAAAAAAQAAgAEAAIAA=</HashCode>
+      <FileName>BusinessObjects\Coordenacao.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Circuitos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.DiaTransporte">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <Members>
+      <Field Name="assentos" Hidden="true" />
+      <Field Name="dia" Hidden="true" />
+      <Method Name="DiaTransporte" Hidden="true" />
+      <Field Name="transporte" Hidden="true" />
+      <Field Name="valor" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAAAACAAACABAAAgAAAAAACMAAAIBAAACAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\DiaTransporte.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Transporte" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Itinerarios" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Evento">
+    <Position X="4.5" Y="8.5" Width="1.5" />
+    <Members>
+      <Method Name="AfterConstruction" Hidden="true" />
+      <Field Name="coordenacao" Hidden="true" />
+      <Field Name="corContraste" Hidden="true" />
+      <Field Name="corFonte" Hidden="true" />
+      <Field Name="corFundo" Hidden="true" />
+      <Field Name="data" Hidden="true" />
+      <Field Name="descricao" Hidden="true" />
+      <Method Name="Evento" Hidden="true" />
+      <Field Name="lista" Hidden="true" />
+      <Field Name="pagamento" Hidden="true" />
+      <Field Name="tema" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAEABAIBAARAQACAYEAAgABEAAIAxAADAIAA=</HashCode>
+      <FileName>BusinessObjects\Evento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Dias" />
+      <Property Name="Comprovantes" />
+      <Property Name="Congregacoes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.DiaEvento">
+    <Position X="4.5" Y="6.25" Width="1.5" />
+    <Members>
+      <Field Name="data" Hidden="true" />
+      <Method Name="DiaEvento" Hidden="true" />
+      <Field Name="evento" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAgAAABIAQAAQAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\DiaEvento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Transportes" />
+      <Property Name="Passagens" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Fornecedor">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Fornecedor" Hidden="true" />
+      <Field Name="nome" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>BusinessObjects\Fornecedor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Transportes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Itinerario">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <Members>
+      <Field Name="congregacao" Hidden="true" />
+      <Field Name="diaTransporte" Hidden="true" />
+      <Method Name="Itinerario" Hidden="true" />
+      <Field Name="parada" Hidden="true" />
+      <Method Name="Passagens_CollectionChanged" Hidden="true" />
+      <Field Name="saida" Hidden="true" />
+      <Field Name="totalPassageiros" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAgQAAAAAAABBAAAAAwQAACIEAAAABAAQAgAAAAIAAA=</HashCode>
+      <FileName>BusinessObjects\Itinerario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Passagens" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Passageiro">
+    <Position X="10.5" Y="8.75" Width="1.5" />
+    <Members>
+      <Field Name="congregacao" Hidden="true" />
+      <Field Name="dataNascimento" Hidden="true" />
+      <Field Name="documento" Hidden="true" />
+      <Field Name="nome" Hidden="true" />
+      <Method Name="Passageiro" Hidden="true" />
+      <Field Name="tipoDocumento" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAgAAAAIABAACAAwAIAEIAAA=</HashCode>
+      <FileName>BusinessObjects\Passageiro.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Dependentes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Dependente">
+    <Position X="13.5" Y="8.25" Width="1.5" />
+    <Members>
+      <Field Name="dataNascimento" Hidden="true" />
+      <Method Name="Dependente" Hidden="true" />
+      <Field Name="documento" Hidden="true" />
+      <Field Name="nome" Hidden="true" />
+      <Field Name="passageiro" Hidden="true" />
+      <Field Name="tipoDocumento" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAABAAAAAQAAAAAAAgAAAAIABAACAAQAAAEAAAA=</HashCode>
+      <FileName>BusinessObjects\Dependente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Passagem">
+    <Position X="10.5" Y="5.75" Width="1.5" />
+    <Members>
+      <Method Name="AfterConstruction" Hidden="true" />
+      <Field Name="assento" Hidden="true" />
+      <Field Name="congregacao" Hidden="true" />
+      <Field Name="diaEvento" Hidden="true" />
+      <Method Name="GerarAssento" Hidden="true" />
+      <Field Name="grupo" Hidden="true" />
+      <Field Name="itinerario" Hidden="true" />
+      <Field Name="passageiro" Hidden="true" />
+      <Method Name="Passagem" Hidden="true" />
+      <Field Name="saida" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFAQAABcAAAAhAAAAIAAAAAAAAgAgBBAAIAAQ=</HashCode>
+      <FileName>BusinessObjects\Passagem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Grupo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Saida">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="AfterConstruction" Hidden="true" />
+      <Field Name="congregacao" Hidden="true" />
+      <Field Name="endereco" Hidden="true" />
+      <Field Name="horario" Hidden="true" />
+      <Method Name="Saida" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAIAAAAAAAAAAAAAgAAAAIAgQAAAIEAA=</HashCode>
+      <FileName>BusinessObjects\Saida.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.Transporte">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="AfterConstruction" Hidden="true" />
+      <Field Name="assentos" Hidden="true" />
+      <Field Name="ativo" Hidden="true" />
+      <Field Name="descricao" Hidden="true" />
+      <Field Name="fornecedor" Hidden="true" />
+      <Method Name="Transporte" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAAAACAAAAABAIAAAQEAAAABAAAAAAAAAAACAAEAAgA=</HashCode>
+      <FileName>BusinessObjects\Transporte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SCT.Module.BusinessObjects.GrupoViagem">
+    <Position X="13.5" Y="5.75" Width="1.5" />
+    <Members>
+      <Field Name="cor" Hidden="true" />
+      <Field Name="descricao" Hidden="true" />
+      <Method Name="GrupoViagem" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAQAAAQAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\GrupoViagem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

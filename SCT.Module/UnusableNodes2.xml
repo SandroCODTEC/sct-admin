@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Evento_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Item1">
+              <LayoutGroup Id="Evento">
+                <LayoutGroup Id="Evento_col1">
+                  <LayoutGroup Id="Autoab8e0d22-f235-42fe-8d20-1c8eeb4abe7b">
+                    <LayoutGroup Id="Auto6c680d25-0985-4a2c-9dd3-62591d2acc28">
+                      <LayoutItem Id="Data" ViewItem="Data" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

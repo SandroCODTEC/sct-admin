@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 70 20"
+   style="enable-background:new 0 0 70 20;"
+   xml:space="preserve"
+   sodipodi:docname="Logo.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs9" /><sodipodi:namedview
+   id="namedview7"
+   pagecolor="#505050"
+   bordercolor="#eeeeee"
+   borderopacity="1"
+   inkscape:showpageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#505050"
+   showgrid="false"
+   inkscape:zoom="11.313709"
+   inkscape:cx="36.592776"
+   inkscape:cy="17.677669"
+   inkscape:window-width="1920"
+   inkscape:window-height="1009"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#FF7200;}
+</style>
+
+<g
+   id="Layer_1-9"
+   transform="matrix(0.70897332,0,0,0.70897332,-2.7825384,-1.3274045)"
+   style="fill:#ff7200;fill-opacity:1"><g
+     id="Bus"
+     style="fill:#ff7200;fill-opacity:1"><path
+       d="M 24,2 H 8 C 5.8,2 4,3.8 4,6 v 18 c 0,1.1 0.9,2 2,2 v 0 3 c 0,0.5 0.4,1 1,1 h 2 c 0.6,0 1,-0.5 1,-1 v -3 h 12 v 3 c 0,0.5 0.5,1 1,1 h 2 c 0.5,0 1,-0.5 1,-1 v -3 0 c 1.1,0 2,-0.9 2,-2 V 6 C 28,3.8 26.2,2 24,2 Z M 8,6 h 16 v 8 H 8 Z m 2,16 c -1.1,0 -2,-0.9 -2,-2 0,-1.1 0.9,-2 2,-2 1.1,0 2,0.9 2,2 0,1.1 -0.9,2 -2,2 z m 10,-2 c 0,-1.1 0.9,-2 2,-2 1.1,0 2,0.9 2,2 0,1.1 -0.9,2 -2,2 -1.1,0 -2,-0.9 -2,-2 z"
+       fill="#FFB115"
+       class="Yellow"
+       id="path273"
+       style="fill:#ff7200;fill-opacity:1" /></g></g><g
+   aria-label="SCT"
+   id="text1374"
+   style="font-weight:bold;font-size:29.0142px;font-family:'Franklin Gothic Demi Cond';-inkscape-font-specification:'Franklin Gothic Demi Cond Bold';text-align:center;text-orientation:sideways;text-anchor:middle;fill:#ff7200;stroke-width:65.7962;stroke-linecap:round"><path
+     d="m 41.176901,4.5286208 -3.513438,1.3458736 q -0.750856,-2.3942382 -2.748415,-2.3942382 -0.935028,0 -1.487545,0.5383494 -0.538349,0.5241823 -0.538349,1.2325368 0,0.8216912 0.637519,1.3175394 0.651686,0.481681 2.705914,1.2750381 1.870056,0.6941874 2.932588,1.3742077 1.076699,0.6800203 1.728385,1.8558884 0.665853,1.161702 0.665853,2.705915 0,2.705914 -1.870056,4.448466 -1.855889,1.728385 -4.986816,1.728385 -5.25599,0 -6.7152,-5.312659 l 3.711777,-1.062532 q 0.680021,2.918421 3.102593,2.918421 1.105033,0 1.785053,-0.566684 0.694188,-0.58085 0.694188,-1.515878 0,-0.708355 -0.481681,-1.260871 Q 36.31759,12.589695 34.589205,11.966343 32.364971,11.172986 31.274106,10.535467 30.18324,9.8837808 29.474885,8.6937453 28.766531,7.4895426 28.766531,5.9594969 q 0,-2.6067446 1.671716,-4.2642941 1.685884,-1.67171659 4.448467,-1.67171659 5.043484,0 6.290187,4.50513459 z"
+     id="path1446" /><path
+     d="m 53.587272,12.618029 3.924284,0.240841 q -0.212506,3.145094 -1.99756,5.128486 -1.785053,1.969226 -4.717641,1.969226 -3.570106,0 -5.440162,-2.649246 -1.870056,-2.649246 -1.870056,-7.296051 0,-4.6893071 1.855889,-7.338553 1.855888,-2.64924579 5.510998,-2.64924579 6.049347,0 6.587696,7.48022349 L 53.558938,7.7870515 Q 53.4031,3.4802562 50.867191,3.4802562 q -1.331707,0 -2.125064,1.3883748 -0.77919,1.3883748 -0.77919,5.383494 0,3.570107 0.722522,4.91598 0.722521,1.331707 2.167565,1.331707 2.323402,0 2.734248,-3.881783 z"
+     id="path1443" /><path
+     d="m 57.837398,0.3209951 h 12.056193 v 3.626775 H 65.940973 V 19.659073 H 61.690846 V 3.9477701 h -3.853448 z"
+     id="path1440" /></g></svg>

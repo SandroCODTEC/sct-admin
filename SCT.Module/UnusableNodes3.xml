@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Dependente_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Dependente">
+              <LayoutGroup Id="Dependente_col1">
+                <LayoutItem Id="DependenteWeb" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Congregacao_Saidas_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="SaidaWeb" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Saida_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Saida">
+              <LayoutGroup Id="Saida_col1">
+                <LayoutItem Id="SaidaWeb" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

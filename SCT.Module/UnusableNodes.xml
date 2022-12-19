@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Congregacao_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Congregacao">
+              <LayoutItem Id="Nome" RelativeSize="47.05882352941177" />
+              <LayoutItem Id="Circuito" RelativeSize="27.906976744186046" Removed="True" />
+              <LayoutItem Id="PrevisaoPassagens" RelativeSize="34.883720930232556" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

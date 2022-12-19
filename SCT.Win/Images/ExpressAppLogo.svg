@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2551"
+   width="270"
+   height="91"
+   viewBox="0 0 270 91"
+   sodipodi:docname="ExpressAppLogo.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   inkscape:export-filename="ExpressAppLogo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2555" />
+  <sodipodi:namedview
+     id="namedview2553"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="2.2907407"
+     inkscape:cx="156.28133"
+     inkscape:cy="94.729183"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2557" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g2557">
+    <g
+       id="Layer_1-9"
+       transform="matrix(2.6898424,0,0,2.6898424,-1.1524058,3.6794003)"
+       style="fill:#ff7200;fill-opacity:1">
+      <g
+         id="Bus"
+         style="fill:#ff7200;fill-opacity:1">
+        <path
+           d="M 24,2 H 8 C 5.8,2 4,3.8 4,6 v 18 c 0,1.1 0.9,2 2,2 v 0 3 c 0,0.5 0.4,1 1,1 h 2 c 0.6,0 1,-0.5 1,-1 v -3 h 12 v 3 c 0,0.5 0.5,1 1,1 h 2 c 0.5,0 1,-0.5 1,-1 v -3 0 c 1.1,0 2,-0.9 2,-2 V 6 C 28,3.8 26.2,2 24,2 Z M 8,6 h 16 v 8 H 8 Z m 2,16 c -1.1,0 -2,-0.9 -2,-2 0,-1.1 0.9,-2 2,-2 1.1,0 2,0.9 2,2 0,1.1 -0.9,2 -2,2 z m 10,-2 c 0,-1.1 0.9,-2 2,-2 1.1,0 2,0.9 2,2 0,1.1 -0.9,2 -2,2 -1.1,0 -2,-0.9 -2,-2 z"
+           fill="#FFB115"
+           class="Yellow"
+           id="path273"
+           style="fill:#ff7200;fill-opacity:1" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:19.4372px;font-family:'Franklin Gothic Demi Cond';-inkscape-font-specification:'Franklin Gothic Demi Cond Bold';text-align:center;text-orientation:sideways;text-anchor:middle;fill:#ff7200;stroke-width:44.078;stroke-linecap:round"
+       x="173.58347"
+       y="28.89963"
+       id="text3467"><tspan
+         sodipodi:role="line"
+         id="tspan3465"
+         x="173.58347"
+         y="28.89963"
+         style="font-size:29.3333px;stroke-width:44.078">SCT</tspan><tspan
+         sodipodi:role="line"
+         x="173.58347"
+         y="56.544819"
+         style="stroke-width:44.078"
+         id="tspan3471">SISTEMA COORDENADO</tspan><tspan
+         sodipodi:role="line"
+         x="173.58347"
+         y="80.841316"
+         id="tspan3469"
+         style="stroke-width:44.078">DE TRANSPORTE</tspan></text>
+  </g>
+</svg>

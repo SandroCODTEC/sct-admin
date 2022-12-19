@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views>
+    <DetailView Id="Circuito_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Circuito" Caption="Circuito" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Congregacao_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Congregacao">
+              <LayoutGroup Id="Congregacao_col1" Caption="Congregacao_col1">
+                <LayoutGroup Id="Autofef98f52-a027-4ad5-8152-7a214b393d74" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="Congregacao_col2" Caption="Congregacao_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item1" Caption="Coordenador">
+              <LayoutGroup Id="Autoca56c454-6548-47e6-83ef-855f133e5079" Caption="" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Ajudante">
+              <LayoutGroup Id="Auto78cfdefd-acd6-46c9-b077-ea7ff04166d4" Caption="" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Dependente_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Dependente">
+              <LayoutGroup Id="Dependente_col1" Caption="Dependente_col1">
+                <LayoutGroup Id="Autof2eac80b-d6e8-48c5-bf00-98d0306a9d82" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="Dependente_col2" Caption="Dependente_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Evento_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Item1">
+              <LayoutGroup Id="Evento">
+                <LayoutGroup Id="Evento_col1">
+                  <LayoutGroup Id="Autoab8e0d22-f235-42fe-8d20-1c8eeb4abe7b">
+                    <LayoutGroup Id="Auto98862bd6-c015-4e18-b3a0-b2b32bfd5099">
+                      <LayoutGroup Id="Autoadecd360-f631-451f-b713-445b6a5a7354" Caption="">
+                        <LayoutGroup Id="Autoccc20c3a-7e49-4c5b-b8a3-f18d8309ccd3" Caption="" />
+                        <LayoutGroup Id="Autoedfd1569-6111-4905-b085-9c593306d76f" Caption="" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Auto8c7d4f12-0200-4cb3-80ac-f2a71f588650" Caption="Auto8c7d4f12-0200-4cb3-80ac-f2a71f588650(20)" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Importacao_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Importacao" Caption="Dados da Importação" />
+            <LayoutGroup Id="Item1" Caption="Arquivo da Congregação">
+              <LayoutGroup Id="Auto5c7260c0-d6cc-4b37-97d2-6dea043d06ba" Caption="Auto5c7260c0-d6cc-4b37-97d2-6dea043d06ba(11)" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Passageiro_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Passageiro">
+              <LayoutGroup Id="Passageiro_col1" Caption="Passageiro_col1">
+                <LayoutGroup Id="Auto2d8d510d-b30b-4ef4-bd23-cde5b00e0c1e" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="Passageiro_col2" Caption="Passageiro_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Saida_DetailView">
+      <Items>
+        <PropertyEditor Id="Endereco.Latitude" EditMask="#,##0.000000000000000" DisplayFormat="{0:#,##0.000000000000000}" />
+        <PropertyEditor Id="Endereco.Longitude" DisplayFormat="{0:#,##0.000000000000000}" EditMask="#,##0.000000000000000" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>
