@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "SCT - SISTEMA COORDENADO DE TRANSPORTE"
-#define MyAppVersion "1.5"
+#define MyAppVersion "2.0"
 #define MyAppPublisher "CODTEC SISTEMAS, Inc."
 #define MyAppURL "https://github.com/SandroCODTEC/sct-admin"
 #define MyAppExeName "SCT.exe"
@@ -60,133 +60,142 @@ Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.BonusSkins.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Charts.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.CodeParser.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Dashboard.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Dashboard.v22.1.Win.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Data.Desktop.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Data.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.DataAccess.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.DataAccess.v22.1.UI.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.DataVisualization.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Diagram.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Dialogs.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Drawing.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.ConditionalAppearance.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Dashboards.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Dashboards.Win.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.FileAttachment.Win.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Objects.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Office.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Office.Win.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.ReportsV2.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.ReportsV2.Win.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Security.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Security.Xpo.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Validation.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Validation.Win.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Win.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.ExpressApp.Xpo.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Images.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Map.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Mvvm.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Office.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Pdf.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Pdf.v22.1.Drawing.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Persistent.Base.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Persistent.BaseImpl.Xpo.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.PivotGrid.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Printing.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.RichEdit.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.RichEdit.v22.1.Export.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Sparkline.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.SpellChecker.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Spreadsheet.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.TreeMap.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Utils.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Utils.v22.1.UI.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.Xpo.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraBars.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraCharts.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraCharts.v22.1.Extensions.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraCharts.v22.1.UI.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraCharts.v22.1.Wizard.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraDiagram.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraDialogs.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraEditors.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraGantt.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraGauges.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraGauges.v22.1.Presets.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraGauges.v22.1.Win.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraGrid.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraLayout.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraMap.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraNavBar.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraPdfViewer.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraPivotGrid.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraPrinting.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraReports.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraReports.v22.1.Extensions.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraRichEdit.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraScheduler.v22.1.Core.Desktop.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraScheduler.v22.1.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraScheduler.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraScheduler.v22.1.Extensions.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraScheduler.v22.1.Reporting.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraScheduler.v22.1.Reporting.Extensions.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraSpellChecker.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraSpreadsheet.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraTreeList.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraTreeMap.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraTreeMap.v22.1.UI.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraVerticalGrid.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\DevExpress.XtraWizard.v22.1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\EntityFramework.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\EntityFramework.SqlServer.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\FileSystemData.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\FileSystemData.pdb"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\LogonParameters"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Microsoft.CodeAnalysis.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Microsoft.Extensions.Options.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Microsoft.Extensions.Primitives.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Model.xafml"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\ModelAssembly.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Model_pt-BR.xafml"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\ModulesVersionInfo"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\sct.db"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\SCT.deps.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\SCT.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\SCT.dll.config"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\SCT.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\SCT.Module.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\SCT.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.ComponentModel.Composition.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.Data.Odbc.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.Data.OleDb.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.Data.SqlClient.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.Data.SQLite.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.Data.SQLite.EF6.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.IO.Ports.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.Private.ServiceModel.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.ServiceModel.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.ServiceModel.Http.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.ServiceModel.NetTcp.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.ServiceModel.Primitives.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.ServiceModel.Security.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.ServiceModel.Syndication.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\System.ServiceProcess.ServiceController.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Dashboards\*"; DestDir: "{app}\Dashboards"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\Reports\*"; DestDir: "{app}\Reports"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\runtimes\*"; DestDir: "{app}\runtimes"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net6.0-windows\pt-BR\*"; DestDir: "{app}\pt-BR"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.BonusSkins.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Charts.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.CodeParser.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Dashboard.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Dashboard.v22.2.Win.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Data.Desktop.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Data.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.DataAccess.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.DataAccess.v22.2.UI.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.DataVisualization.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Diagram.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Dialogs.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Drawing.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.CodeAnalysis.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.ConditionalAppearance.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Dashboards.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Dashboards.Win.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.FileAttachment.Win.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Objects.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Office.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Office.Win.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.ReportsV2.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.ReportsV2.Win.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Security.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Security.Xpo.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Validation.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Validation.Win.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Win.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.ExpressApp.Xpo.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Images.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Map.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Mvvm.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Office.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Pdf.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Pdf.v22.2.Drawing.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Persistent.Base.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Persistent.BaseImpl.Xpo.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.PivotGrid.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Printing.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.RichEdit.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.RichEdit.v22.2.Export.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Sparkline.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.SpellChecker.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Spreadsheet.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.TreeMap.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Utils.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Utils.v22.2.UI.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.Xpo.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraBars.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraCharts.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraCharts.v22.2.Extensions.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraCharts.v22.2.UI.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraCharts.v22.2.Wizard.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraDiagram.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraDialogs.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraEditors.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraGantt.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraGauges.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraGauges.v22.2.Presets.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraGauges.v22.2.Win.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraGrid.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraLayout.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraMap.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraNavBar.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraPdfViewer.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraPivotGrid.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraPrinting.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraReports.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraReports.v22.2.Extensions.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraRichEdit.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraScheduler.v22.2.Core.Desktop.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraScheduler.v22.2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraScheduler.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraScheduler.v22.2.Extensions.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraScheduler.v22.2.Reporting.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraScheduler.v22.2.Reporting.Extensions.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraSpellChecker.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraSpreadsheet.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraTreeList.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraTreeMap.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraTreeMap.v22.2.UI.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraVerticalGrid.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DevExpress.XtraWizard.v22.2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\EntityFramework.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\EntityFramework.SqlServer.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\FileSystemData.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\FileSystemData.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Microsoft.CodeAnalysis.CSharp.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Microsoft.CodeAnalysis.CSharp.Workspaces.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Microsoft.CodeAnalysis.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Microsoft.CodeAnalysis.Workspaces.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Microsoft.Extensions.Options.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Microsoft.Extensions.Primitives.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Model.xafml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Model_pt-BR.xafml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\SCT.deps.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\SCT.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\SCT.dll.config"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\SCT.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\SCT.Module.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\SCT.Module.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\SCT.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\SCT.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.ComponentModel.Composition.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Composition.AttributedModel.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Composition.Convention.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Composition.Hosting.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Composition.Runtime.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Composition.TypedParts.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Data.Odbc.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Data.OleDb.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Data.SqlClient.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Data.SQLite.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Data.SQLite.EF6.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.IO.Ports.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.Private.ServiceModel.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.ServiceModel.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.ServiceModel.Http.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.ServiceModel.NetTcp.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.ServiceModel.Primitives.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.ServiceModel.Security.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.ServiceModel.Syndication.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\System.ServiceProcess.ServiceController.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\update.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\DBUpdater\*"; DestDir: "{app}\DBUpdater"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Dashboards\*"; DestDir: "{app}\Dashboards"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Reports\*"; DestDir: "{app}\Reports"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\Documents\*"; DestDir: "{app}\Documents"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\runtimes\*"; DestDir: "{app}\runtimes"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Projects\XAF\SCT2022\SCT\SCT-Desktop\SCT\SCT.Win\bin\Release\net7.0-windows\pt-BR\*"; DestDir: "{app}\pt-BR"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
@@ -195,5 +204,6 @@ Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
+Filename: "{app}\update.bat"; Flags: runhidden
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 

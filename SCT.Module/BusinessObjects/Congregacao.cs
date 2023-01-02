@@ -3,6 +3,7 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
+using SCT.Module.Controllers;
 using System;
 using System.ComponentModel;
 using System.Drawing;
@@ -12,7 +13,7 @@ namespace SCT.Module.BusinessObjects
 {
     [DefaultClassOptions, ImageName("Actions_Home"), XafDefaultProperty(nameof(Nome)),
         NavigationItem("Tabelas"), XafDisplayName("Congregações"), Persistent("Congregacoes")]
-    public class Congregacao : BaseObject
+    public class Congregacao : BaseObject, IExportDoc
     {
         public Congregacao(Session session) : base(session)
         {

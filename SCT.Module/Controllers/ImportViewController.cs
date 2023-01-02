@@ -4,6 +4,7 @@ using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Layout;
 using DevExpress.ExpressApp.Model.NodeGenerators;
+using DevExpress.ExpressApp.ReportsV2;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Utils;

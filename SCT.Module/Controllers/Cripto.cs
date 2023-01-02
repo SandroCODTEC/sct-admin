@@ -38,18 +38,18 @@ namespace SCT.Module.Controllers
 
             // Create an RijndaelManaged object
             // with the specified key and IV.
-            using (var rijAlg = new RijndaelManaged())
+            using var AES = Aes.Create();
             {
                 //Settings
-                rijAlg.Mode = CipherMode.CBC;
-                rijAlg.Padding = PaddingMode.PKCS7;
-                rijAlg.FeedbackSize = 128;
+                AES.Mode = CipherMode.CBC;
+                AES.Padding = PaddingMode.PKCS7;
+                AES.FeedbackSize = 128;
 
-                rijAlg.Key = key;
-                rijAlg.IV = iv;
+                AES.Key = key;
+                AES.IV = iv;
 
                 // Create a decrytor to perform the stream transform.
-                var decryptor = rijAlg.CreateDecryptor(rijAlg.Key, rijAlg.IV);
+                var decryptor = AES.CreateDecryptor(AES.Key, AES.IV);
 
                 try
                 {
@@ -106,17 +106,17 @@ namespace SCT.Module.Controllers
             byte[] encrypted;
             // Create a RijndaelManaged object
             // with the specified key and IV.
-            using (var rijAlg = new RijndaelManaged())
+            using var AES = Aes.Create();
             {
-                rijAlg.Mode = CipherMode.CBC;
-                rijAlg.Padding = PaddingMode.PKCS7;
-                rijAlg.FeedbackSize = 128;
+                AES.Mode = CipherMode.CBC;
+                AES.Padding = PaddingMode.PKCS7;
+                AES.FeedbackSize = 128;
 
-                rijAlg.Key = key;
-                rijAlg.IV = iv;
+                AES.Key = key;
+                AES.IV = iv;
 
                 // Create a decrytor to perform the stream transform.
-                var encryptor = rijAlg.CreateEncryptor(rijAlg.Key, rijAlg.IV);
+                var encryptor = AES.CreateEncryptor(AES.Key, AES.IV);
 
                 // Create the streams used for encryption.
                 using (var msEncrypt = new MemoryStream())

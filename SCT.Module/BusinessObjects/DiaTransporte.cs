@@ -3,6 +3,7 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
+using SCT.Module.Controllers;
 using System;
 using System.ComponentModel;
 using System.Linq;
@@ -11,11 +12,12 @@ namespace SCT.Module.BusinessObjects
 {
     [DefaultClassOptions, ImageName("BO_Contact"), XafDefaultProperty(nameof(Descricao)),
         NavigationItem("Eventos"), XafDisplayName("Transporte do dia"), Persistent("DiaTransportes")]
-    public class DiaTransporte : BaseObject
+    public class DiaTransporte : BaseObject, IExportDoc
     {
         public DiaTransporte(Session session) : base(session)
         { }
 
+        string motorista;
         TimeSpan horarioPartida;
         string celular;
         string responsavel;
@@ -74,6 +76,12 @@ namespace SCT.Module.BusinessObjects
             get { return Convert.ToInt32(EvaluateAlias(nameof(Alocados))); }
         }
         
+        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        public string Motorista
+        {
+            get => motorista;
+            set => SetPropertyValue(nameof(Motorista), ref motorista, value);
+        }
         [XafDisplayName("Horário de Partida")]
         public TimeSpan HorarioPartida
         {

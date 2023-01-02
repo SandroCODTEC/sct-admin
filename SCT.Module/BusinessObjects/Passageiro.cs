@@ -3,6 +3,7 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
+using SCT.Module.Controllers;
 using SCT.Module.Helpers;
 using System;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace SCT.Module.BusinessObjects
 {
     [DefaultClassOptions, ImageName("BO_Lead"), XafDefaultProperty(nameof(Nome)),
     NavigationItem("Tabelas"), XafDisplayName("Passageiros"), Persistent("Passageiros")]
-    public class Passageiro : BaseObject
+    public class Passageiro : BaseObject, IExportDoc
     {
         public Passageiro(Session session) : base(session)
         { }

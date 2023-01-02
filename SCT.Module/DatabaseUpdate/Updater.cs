@@ -100,13 +100,19 @@ public class Updater : ModuleUpdater
         var report1 = CreateReport(userAdmin.Session, "IDENTIFICAÇÃO DOS TRANSPORTES", typeof(DiaTransporte));
         var report2 = CreateReport(userAdmin.Session, "ITINERÁRIO DOS TRANSPORTES", typeof(DiaTransporte));
         var report3 = CreateReport(userAdmin.Session, "LISTA DE PASSAGEIROS", typeof(Passagem));
+        var report4 = CreateReport(userAdmin.Session, "RELATÓRIO DE CONTROLE DE QUALIDADE", typeof(DiaTransporte));
+        var report5 = CreateReport(userAdmin.Session, "BILHETES", typeof(Passagem));
 
         var dashboard1 = CreateDashboard("ACOMPANHAMENTO FINANCEIRO");
         var dashboard2 = CreateDashboard("ACOMPANHAMENTO LOGÍSTICO");
 
+        //
+        var documento1 = CreateDocument("CARTA DE AGRADECIMENTO AOS MOTORISTAS", typeof(DiaTransporte));
+        var documento2 = CreateDocument("CARTA PARA AS CONGREGAÇÕES", typeof(Congregacao));
+
         ObjectSpace.CommitChanges(); //This line persists created object(s).
     }
-    ReportDataV2 CreateReport(Session session, string defaultUrl, Type type)
+    ReportDataV2 CreateReport(Session session, string defaultUrl, Type type, bool InPlace = false)
     {
         ReportDataV2 item = ObjectSpace.GetObjects<ReportDataV2>(new BinaryOperator("DisplayName", defaultUrl)).FirstOrDefault();
 
@@ -125,6 +131,7 @@ public class Updater : ModuleUpdater
         item = new ReportDataV2(session, type);
 
         item.DisplayName = defaultUrl;
+        item.IsInplaceReport= InPlace;
         using (MemoryStream ms = new MemoryStream())
         {
             report.SaveLayoutToXml(ms);
@@ -153,6 +160,26 @@ public class Updater : ModuleUpdater
 
         item.Content = dashboardXml.ToString();
         item.Title = defaultUrl;
+        ObjectSpace.CommitChanges();
+
+        return item;
+    }
+    Documento CreateDocument(string defaultUrl, Type type)
+    {
+        Documento item = ObjectSpace.GetObjects<Documento>(new BinaryOperator("Name", defaultUrl)).FirstOrDefault();
+
+        if (item != null)
+            return item;
+        else item = ObjectSpace.CreateObject<Documento>();
+
+        var fileName = $"Documents\\{defaultUrl}.docx";
+        if (!File.Exists(fileName))
+            throw new Exception($"Documento '{fileName}' não encontrado!");
+
+        item.Template = File.ReadAllBytes(fileName);
+        item.DataType = type;
+        item.Name = defaultUrl;
+
         ObjectSpace.CommitChanges();
 
         return item;
@@ -240,19 +267,19 @@ public class Updater : ModuleUpdater
         var congs = ObjectSpace.GetObjects<Congregacao>();
         evento.Congregacoes.AddRange(congs);
 
-        for (DateTime data = evento.DataInicial; data <= evento.DataFinal; data.AddDays(1))
-        {
-            var diaEvento = ObjectSpace.CreateObject<DiaEvento>();
-            diaEvento.Evento = evento;
-            diaEvento.Data = data;
-            for (int x = 1; x <= 9; x++)
-            {
-                var diaTransporte = ObjectSpace.CreateObject<DiaTransporte>();
-                diaTransporte.Dia = diaEvento;
-                diaTransporte.Transporte = transporte;
-                diaTransporte.Valor = 2000;
-            }
-        }
+        //for (DateTime data = evento.DataInicial; data <= evento.DataFinal; data.AddDays(1))
+        //{
+        //    var diaEvento = ObjectSpace.CreateObject<DiaEvento>();
+        //    diaEvento.Evento = evento;
+        //    diaEvento.Data = data;
+        //    for (int x = 1; x <= 9; x++)
+        //    {
+        //        var diaTransporte = ObjectSpace.CreateObject<DiaTransporte>();
+        //        diaTransporte.Dia = diaEvento;
+        //        diaTransporte.Transporte = transporte;
+        //        diaTransporte.Valor = 2000;
+        //    }
+        //}
     }
 
     public override void UpdateDatabaseBeforeUpdateSchema()

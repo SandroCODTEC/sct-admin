@@ -3,6 +3,7 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
+using SCT.Module.Controllers;
 using System;
 using System.ComponentModel;
 using System.Drawing;
@@ -12,7 +13,7 @@ namespace SCT.Module.BusinessObjects
 {
     [DefaultClassOptions, ImageName("Travel_Bus"), DefaultProperty(nameof(Nome)),
         NavigationItem("Tabelas"), XafDisplayName("Fornecedores"), Persistent("Fornecedores")]
-    public class Fornecedor : BaseObject
+    public class Fornecedor : BaseObject, IExportDoc
     {
         public Fornecedor(Session session) : base(session)
         { }
